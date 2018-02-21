@@ -43,7 +43,7 @@ $(document).ready (function(){
         //console.log (defenderCharacter[0].health);
 
         // Game logic ######
-        if (playerCharacter[0].health >0) {
+        if (playerCharacter[0].health > 0) {
             if (defenderCharacter[0].health > 0){
                 defenderCharacter[0].health -= (playerCharacter[0].attack * exp);
                 //console.log ("defender health:" + defenderCharacter[0].health + " attack: " + (playerCharacter[0].attack* exp))
@@ -89,12 +89,6 @@ $(document).ready (function(){
 
 });
     
-
-
-
-
-
-
 
 
 
