@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <img class="bg" src="./media/room1.jpg" alt="arena">
+        <img class="logo" src="./media/x_men_logo.png" alt="xmen">
+
+
+        <!-- play zone -->
+        <div class="arena">
+            <div class="wrap alignX">
+                <div  class="hp">
+                    <span id = "playerHP">100</span>
+                </div>
+
+                <div id = "player" class="card1 glow" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <p>Drag your characher and drop it here</p>
+                </div>
+
+                <div class="fight">
+                    <img id = "attack" src="./media/attack.png" alt="button">
+                </div>
+
+                <div id = "opponent" class="card2 glow" ondrop="drop1(event)" ondragover="allowDrop(event)">
+                    <p>Drag your opponent characher and drop it here</p>
+                </div>
+
+                <div class="hp">
+                    <span id = "defenderHP">100</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cards">
+
+
+            <div class="wrap">
+
+                <div class="card1">
+                    <img id = "1" src="./media/wolverine.jpg" alt="Wolverine" draggable="true" ondragstart="drag('#1')">
+                </div>
+
+                <div class="card1">
+                    <img id = "2" src="./media/cyclops.jpg" alt="Cyclops" draggable="true" ondragstart="drag('#2')">
+                </div>
+
+                <div class="card1">
+                    <img id = "3" src="./media/phoenix.jpg" alt="Phenox" draggable="true" ondragstart="drag('#3')">
+                </div>
+
+                <div class="card1">
+                    <img id = "4" src="./media/storm.jpg" alt="Storm" draggable="true" ondragstart="drag('#4')">
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <script type="text/javascript" src="./js/logic.js"></script>
+</body>
+
+</html>

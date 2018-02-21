@@ -1,0 +1,130 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background: #1d4660;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container .bg {
+    position: relative;
+    width: 100%;
+}
+
+.container .logo {
+    position: absolute;
+    top: -5%;
+    left: 20%;
+    transform-origin: center;
+}
+
+.container .arena {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    background: #ffffff49;
+    top: 24%;
+    border-top: 5px solid #1d4660;
+    border-bottom: 5px solid #1d4660;
+    overflow: hidden;
+}
+
+.wrap {
+    position: relative;
+    top: 2%;
+    left:20%;
+    height: 90%;
+}
+
+.alignX {
+    left: 18%;
+}
+
+.wrap .hp {
+    width: 2%;
+    height: 100%;
+    background: #000;
+    float: left;
+    position: relative;
+    top:4%;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.wrap .hp span {
+    display: block;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgb(255, 230, 5), rgb(255, 81, 0));
+    text-align: center;
+    transition: 0.5s;
+}
+
+#player p , #opponent p{
+    color: #1684c7;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 26%;
+    
+}
+
+.fight img {
+    width: 90%;
+    position: relative;
+    top: 33%;
+    left: 8%;
+    filter: drop-shadow(0px 0px 10px #4444dd);
+    display: none;
+}
+
+.glow {
+    animation: glow 1s infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 0 #FFF;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #FFF;
+    }
+}
+
+.wrap .card1, .wrap .card2 {
+    width: 12%;
+    height: 100%;
+    background: #14364b;
+    margin:10px 17px 0;
+    float: left;
+}
+
+.card1 img, .card2 img {
+    height: 100%;
+}
+
+.wrap .fight {
+    width: 27%;
+    height: 100%;
+    float: left;
+    margin:10px 13px 0;
+}
+
+
+.container .cards {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    background: #ffffff49;
+    top: 62%;
+    border-top: 5px solid #1d4660;
+    border-bottom: 5px solid #1d4660;
+}
